@@ -6,7 +6,7 @@ import folium
 from streamlit_folium import folium_static
 
 
-df = pd.read_csv(r'dataSetFood\train.csv')
+df = pd.read_csv(r'dataSetFood/train.csv')
 
 def preprocessDataSet(df):
   select_rows = (df['Delivery_person_Age'] != 'NaN ')
@@ -59,7 +59,7 @@ df1 = pd.read_csv('df1.csv')
 #   sidebar streamlit
 #------------------------------
 st.header('Visão cliente')
-image = Image.open(r'images\analysis.png')
+image = Image.open(r'images/analysis.png')
 st.sidebar.image(image=image)
 st.sidebar.markdown("# Curry company")
 st.sidebar.markdown("## fasted delivere in tow")
